@@ -94,9 +94,7 @@ export default function Header({ sticky }) {
                 setIsSticky(false);
             }, 500);
         }
-        else{
-            setIsSticky(false);
-        }
+        
     };
     const handleClick = () => {
         setIsActive(!isActive);

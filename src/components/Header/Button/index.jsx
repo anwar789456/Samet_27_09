@@ -7,7 +7,7 @@ export default function Button({ isActive, toggleMenu, isSticky }) {
         animate={{ top: isActive ? "-100%" : "0%" }}
         transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}>
         <div className={styles.el} onClick={() => toggleMenu()}>
-          <MenuIcon color={isSticky ? "black" : "white"} />
+          <MenuIcon color={isSticky ? "rgba(48, 48, 48, 0.7)" : "rgb(231, 231, 231)"} />
         </div>
         <div className={styles.el} onClick={() => toggleMenu()}>
           <CloseIcon color={isSticky ? "black" : "white"} />

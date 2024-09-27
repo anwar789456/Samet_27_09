@@ -3,7 +3,7 @@
     top: 4rem;
     left: 0;
     width: 100vw;
-    height: 60px;
+    height: 55px;
     background-color: #f3f2ec;
     border-bottom: 1px solid #ddd;
     display: flex;
@@ -18,7 +18,7 @@
 }
 .animatedLine {
   position: absolute;
-  bottom: -1px;
+  bottom: 2px;
   left: 50%;
   width: 0;
   height: 2px;
@@ -26,8 +26,8 @@
   transition: width 0.4s ease, left 0.4s ease;
 }
 .searchInput:focus + .animatedLine {
-  width: 100%;
-  left: 0;
+  width: 100vw;
+  left: -20px;
 }
 .searchContent {
     display: flex;
@@ -50,14 +50,19 @@
     letter-spacing: .2em;
     font-size: 15px;
 }
-.closeButton {
+
+.closeButton ,.clearButton{
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
-    color: #000;
+    color: rgba($color: #303030, $alpha: .4);
 }
-  /* Basic styling for the placeholder */
+
+.closeButton{
+  padding-left: .5rem;
+}
+
+/* Basic styling for the placeholder */
 .searchInput::placeholder {
     color: rgba($color: #303030, $alpha: 0.7);
     font-family: Cormorant, serif;
@@ -69,7 +74,7 @@
     font-size: 15px;
 }
   
-  /* Placeholder styling for WebKit browsers (Chrome, Safari, Opera) */
+/* Placeholder styling for WebKit browsers (Chrome, Safari, Opera) */
 .searchInput::-webkit-input-placeholder {
     color: rgba($color: #303030, $alpha: 0.7);
     font-family: Cormorant, serif;
@@ -81,7 +86,7 @@
     font-size: 15px;
 }
   
-  /* Placeholder styling for Firefox */
+/* Placeholder styling for Firefox */
 .searchInput::-moz-placeholder {
     color: rgba($color: #303030, $alpha: 0.7);
     font-family: Cormorant, serif;
@@ -93,7 +98,7 @@
     font-size: 22px;
 }
   
-  /* Placeholder styling for Internet Explorer 10+ */
+/* Placeholder styling for Internet Explorer 10+ */
 .searchInput:-ms-input-placeholder {
     color: rgba($color: #303030, $alpha: 0.7);
     font-family: Cormorant, serif;
@@ -104,8 +109,8 @@
     letter-spacing: .2em;
     font-size: 22px;
 }
-  
-  /* Placeholder styling for Microsoft Edge */
+
+/* Placeholder styling for Microsoft Edge */
 .searchInput::-ms-input-placeholder {
     color: rgba($color: #303030, $alpha: 0.7);
     font-family: Cormorant, serif;
@@ -120,9 +125,9 @@
 .searchResults {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 55px;
     width: 100vw;
-    height: calc(100vh - 124px);
+    height: calc(100vh - 400px);
     background-color: #eeeeed;
     overflow-y: auto;
     z-index: 9;

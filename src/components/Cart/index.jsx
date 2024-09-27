@@ -19,16 +19,17 @@ export default function CartContainer({ isOpen, onClose }) {
                 <button className={styles.closeButton} onClick={onClose}>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 24 24" 
-                        width={25} 
+                        width={30} 
                         height={30} 
-                        fill={"none"}>
+                        fill>
                         <path d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999" 
                         stroke="currentColor" 
-                        strokeWidth=".5" 
+                        strokeWidth=".8" 
                         strokeLinecap="round" 
                         strokeLinejoin="round" />
                     </svg>
-                    <h1 className={styles.closeH1}>Close</h1>
+                    {//<h1 className={styles.closeH1}>Close</h1>
+                    }
                 </button>
             </div>
             {/* Cart items will be added here later */}

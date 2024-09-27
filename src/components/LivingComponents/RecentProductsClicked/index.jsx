@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchProducts } from '../../../api/fetchProducts';
 import styles from './style.module.scss';
 import Image from 'next/image';
-import { Virtual, Navigation, Pagination } from 'swiper/modules';
+import { Virtual, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -35,12 +35,12 @@ export default function RecentProductsClicked() {
         slidesPerView={4}
         spaceBetween={20}
         centeredSlides={false}
-        navigation
+        
         pagination={{
           dynamicBullets: true,
           clickable: true,
         }}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination]}
         breakpoints={{
           '@0.00': {
             slidesPerView: 1,

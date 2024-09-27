@@ -9,15 +9,15 @@
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 9999999999;
-    padding-top: 1rem;
+    padding-top: 1px;
     display: flex;
     flex-direction: column;
 }
 
 .closeButton {
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: 1.2rem;
+    right: 1.5rem;
     background: none;
     border: none;
     font-size: 1.5rem;
